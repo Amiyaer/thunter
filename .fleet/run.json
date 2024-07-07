@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "cargo",
+            "name": "Cargo configuration",
+        },
+        {
+            "type": "command",
+            "name": "Command configuration",
+            "program": "",
+        },
+        
+    ]
+}
