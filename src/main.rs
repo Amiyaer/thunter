@@ -1,5 +1,5 @@
 use std::{env, process};
-use file_search::Config;
+use thunter::Config;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -11,7 +11,7 @@ fn main() {
     println!("Searching for {}", config.query);
     println!("In file {}", config.file_path);
     
-    if let Err(e) = file_search::run(config) {
+    if let Err(e) = thunter::run(config) {
         // 错误输出到控制台
         eprintln!("Application error: {e}");
         process::exit(1);
